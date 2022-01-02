@@ -1,3 +1,136 @@
 body {
-  background: peachpuff;
+  background-color: snow;
 }
+
+/* * {
+  border: 1px solid purple;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-color: lightgrey;
+  grid-gap: 15px;
+  min-height: 90vh;
+  padding: 15px;
+  border: 1px solid black;
+  font-size: x-large;
+  border-radius: 10px;
+}
+
+.a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / 4;
+  background-color: rgb(185, 193, 201);
+  border: 1px solid black;
+}
+
+.b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  text-align: center;
+  background-color: rgb(185, 193, 201);
+  border: 1px solid black;
+}
+
+.c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(185, 193, 201);
+  border: 1px solid black;
+}
+
+.d{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(185, 193, 201);
+  border: 1px solid black;
+}
+
+.e {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(185, 193, 201);
+  border: 1px solid black;
+}
+
+.f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(185, 193, 201);
+  border: 1px solid black;
+}
+
+.g {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(185, 193, 201);
+  border: 1px solid black;
+}
+
+.h {
+  display: flex;
+  grid-column: 1 / 4;
+  grid-row: 4 / 6;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(185, 193, 201);
+  border: 1px solid black;
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .a {
+    grid-column: 1 / 5;
+  }
+  .b {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .c {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .d {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  
+  .e {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .f {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  .g {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+
+  .h {
+    grid-column: 4 / 5;
+    grid-row: 2 / 4;
+  }
+}
+
+
+
